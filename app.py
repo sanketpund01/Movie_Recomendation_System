@@ -61,7 +61,12 @@ recommend("Titanic")
 """## Similarity Heatmap"""
 
 import matplotlib.pyplot as plt
+import streamlit as st
 
+fig, ax = plt.subplots()
+im = ax.imshow(similarity_df.values, cmap="viridis")
+fig.colorbar(im)
+st.pyplot(fig)
 plt.figure(figsize=(10,8))
 plt.imshow(similarity_df,cmap='viridis')
 plt.colorbar()
