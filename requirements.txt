@@ -3,3 +3,4 @@ pandas
 scikit-learn
 sklearn
 matplotlib.pyplot
+sklearn.feature_extraction.text
